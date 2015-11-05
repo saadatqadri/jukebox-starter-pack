@@ -1,0 +1,225 @@
+/**/
+/*GLOBAL STYLING*/
+/**/
+body {
+    background-color: #d4d4d4;
+    font-family: arial;
+    /*some browsers put margin on body as default*/
+    margin:0;
+    padding:0;
+}
+
+/*we set the following styles for both the header and .content class*/
+header, .content, {
+    width: 1366px;
+    margin: 0 auto; /* this centers all the content in the header */
+    /* try removing the margin property and see what happens */
+}
+
+ul {
+    /*get rid of default ul styles*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section .headings {
+    text-align: center;
+    padding-top:70px;
+    padding-bottom:70px;
+}
+section .headings h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size:36px;
+    color:#2B95FD;
+}
+section .headings p {
+    font-size: 22px;
+    margin: 0;
+    color: #969595;
+}
+
+/* HEADER */
+header {
+    height: 80px;
+    background-color: #fff;
+    position: relative;
+    /*We'll cover relative and absolute positioning in detail in class. For now, know that this "anchors" the header element, and allows us to position the next few divs RELATIVE to it */
+}
+
+
+.jukebox-logo {
+    position: absolute; /* this positions jukebox-logo RELATIVE to header */
+    top: 29px;
+    left: 70px;
+}
+
+.header-right {
+    position: absolute;
+    float: right;
+    top: 18px;
+    right: 40px;
+    /*the way I got these values was by playing with the Chrome Dev tools*/
+}
+
+/* HERO IMAGE */
+.hero-image {
+    background-image: url('../img/hero-photo.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height:720px;
+    position: relative;
+}
+
+.hero-image-text {
+    position: absolute;
+    left:20%;
+    top:10%;
+    color: #fff;
+}
+
+.hero-image-text h1 {
+    font-size:22px;
+    font-weight: 600; /* makes the text bold */
+}
+
+/* PRICING */
+
+.pricing{
+    height: 700px;
+    background-color: #fff;
+}
+.pricing ul {
+    display: block;
+    margin: 0 auto;
+    /*each .plans is 354px wide, we need x3 of that*/
+    width: 1062px;
+}
+
+.pricing .plans {
+    color: #fff;
+    text-align: center;
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin: 0 27px;
+    border-radius: 15px;
+}
+
+.pricing .plans h3 {
+    font-size: 42px;
+    margin: 30px 0 15px 0;
+}
+
+.pricing .plans h4 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.pricing .plans p {
+    margin: 40px 0;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.basic {
+    background-color: #2b95fd;
+}
+
+.plus {
+    background-color: #4e65ec;
+}
+
+.premium {
+    background-color: #7a30d3;
+}
+
+
+/* FEATURES */
+
+.features {
+    height: 700px;
+    background-image: url('../img/about-photo.png');
+    background-size:cover;
+}
+
+.features ul {
+    position:relative;
+    /* We know the entire section is 700px tall and .feature 283px tall
+    by inspecting element, so we know we need to push it down 208px*/
+    top:208px;
+    display:block;
+    margin: 0 auto;
+    width: 1062px;
+}
+
+.features .feature {
+    width: 354px;
+    padding: 0 27px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    float:left;
+}
+
+.features .feature h3 {
+    font-size: 30px;
+}
+
+.features .feature p {
+    font-size: 18px;
+}
+
+.features .feature img {
+    display:block;
+    margin: 0 auto;
+}
+
+/* ARTISTS SECTION */
+
+.artists {
+    background-color: #fff;
+}
+.artists ul {
+    width: 1003px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    /*this is one way of clearfixing floats, try commenting out
+    'overflow:auto' and see what happens*/
+    overflow: auto;
+}
+.artists .artist {
+    margin: 27px;
+    float:left;
+}
+
+
+/*FOOTER */
+
+footer .logo {
+    position: relative;
+    top: 28px;
+    left: 70px;
+}
+
+footer {
+    height: 80px;
+    background-color: #2391fd;
+    position: relative;
+}
+footer .social {
+    position: absolute;
+    top:18px;
+    right:70px;
+}
+footer .social li {
+    float:right;
+    margin-left:15px;
+}
+
+/*END OF FOOTER*/
+
+
+

@@ -1,0 +1,98 @@
+/*BOOTSTRAP overrides and other styling for the jukebox page */
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+   background-color: white;
+}
+
+.navbar-default, .navbar-collapse {
+    border-color: white;
+}
+
+.jukebox-logo {
+    top: 10px;
+}
+
+/* HERO IMAGE */
+.hero-image {
+    background-image: url('../img/hero-photo.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height:720px;
+    position: relative;
+}
+
+.hero-image-text {
+    position: absolute;
+    left:20%;
+    top:10%;
+    color: #fff;
+}
+
+.hero-image-text h1 {
+    font-size:22px;
+    font-weight: 600; /* makes the text bold */
+}
+
+section .headings {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.plans {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    border-radius: 15px;
+    margin: 10px 0px;
+    padding: 10px 0 30px 0px;
+}
+
+.basic {
+    background-color: #2b95fd;
+}
+
+.plus {
+    background-color: #4e65ec;
+}
+
+.premium {
+    background-color: #7a30d3;
+}
+
+
+   /*==========  Mobile First Method  ==========*/
+
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .btn-subscribe{
+            width: 125px;
+        }
+
+        .hero-image{
+            height: 200px;
+        }
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+
