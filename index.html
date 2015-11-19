@@ -10,90 +10,171 @@
     <link href="css/app.css" rel="stylesheet">
   </head>
   <body>
-    <!-- Body content goes here -->
     <header>
       <nav class="navbar navbar-default">
         <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand jukebox-logo" href="#"><img src="img/jukebox-logo-blue.png"></a>
-          </div><!-- ends navbar-header -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><img src="img/button-subscribe.png"></a></li>
-            <li><a href="#"><img src="img/button-login.png"></a></li>
-          </ul>
+            <a class="navbar-brand jukebox-logo" href="#"><img class="" src="img/jukebox-logo-blue.png"></a>
           </div>
-        </div><!-- ends container-fluid -->
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><img src="img/button-subscribe.png"></a></li>
+              <li><a href="#"><img src="img/button-login.png"></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
       </nav>
     </header>
 
-    <div class="container-fluid">
-      <section class="row">
-        <div class"col-xs-12">
-          <div class="hero-image">
-            <div class="hero-image-text">
-              <h1>Millions of songs<br> at your fingertips.</h1>
-                <p>Play any song, anywhere, on any device.</p>
-                <a href="#"><img class="btn-subscribe" src="img/button-subscribetoday.png"/></a>
+    <!-- HERO IMAGE -->
+    <section class="container-fluid hero-image">
+      <div class="hero-image-text">
+        <h1>Millions of songs<br> at your fingertips.</h1>
+        <p>Play any song, anywhere, on any device.</p>
+        <a href="#"><div class="button">Subscribe Today</div></a>
+      </div>
+    </section>
+
+      <!-- PRICING -->
+    <section class="container-fluid plans-section">
+        <div class="headings">
+          <h2>Your music. Your way</h2>
+          <p>Upgrade to premium and get your first 2 months for free!</p>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="plans">
+              <div class="basic">
+                <ul>
+                  <li><h3>Basic</h3></li>
+                  <li><h4>Free</h4></li>
+                  <li><p>MP3 Audio</p></li>
+                  <li><p>100 songs</p></li>
+                  <li><p>Ads every 10 minutes</p></li>
+                  <li><p>Up to 1 user</p></li>
+                  <li><p>1 device</p></li>
+                  <li><img src="img/button-signup.png"></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="plans">
+              <div class="plus">
+                <ul>
+                  <li><h3>Plus</h3></li>
+                  <li><h4>$10/month</h4></li>
+                  <li><p>MP3 Audio</p></li>
+                  <li><p>100 songs</p></li>
+                  <li><p>Ads every 10 minutes</p></li>
+                  <li><p>Up to 1 user</p></li>
+                  <li><p>1 device</p></li>
+                  <li><img src="img/button-signup.png"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="plans">
+              <div class="premium">
+                <ul>
+                  <li><h3>Premium</h3></li>
+                  <li><h4>Free</h4></li>
+                  <li><p>MP3 Audio</p></li>
+                  <li><p>100 songs</p></li>
+                  <li><p>Ads every 10 minutes</p></li>
+                  <li><p>Up to 1 user</p></li>
+                  <li><p>1 device</p></li>
+                  <li><img src="img/button-signup.png"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div><!-- ends row -->
       </section>
 
-      <section class="row">
-        <div class="pricing headings">
-        <h2>Your music. Your way.</h2>
-          <p>Upgrade to premium and get your first 2 months free of charge.</p>
-        </div>
-          <div class="col-xs-12 col-sm-4">
-            <ul>
-              <li class="plans basic">
-              <h3>Basic</h3>
-              <h4>Free</h4>
-              <!-- could have used a list here instead -->
-              <p>MP3 audio<br>100 songs<br>Ads every 10 minutes<br>Up to 1 user<br>1 device</p>
-              <img src="img/button-signup.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <ul>
-                <li class="plans plus">
-                <h3>Plus</h3>
-                <h4>$10/month</h4>
-                <p>MP3 audio<br>100 songs<br>Ads every 10 minutes<br>Up to 1 user<br>1 device</p>
-                <img src="img/button-signup.png" alt="">
-                </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-              <ul>
-                  <li class="plans premium">
-                    <h3>Premium</h3>
-                    <h4>$20/month</h4>
-                    <p>MP3 audio<br>100 songs<br>Ads every 10 minutes<br>Up to 1 user<br>Unlimited devices</p>
-                    <img src="img/button-signup.png" alt="">
-                </ul>
+      <!-- FEATURES -->
+
+      <section class="container-fluid features-container">
+        <div class="row features">
+        <div class="col-xs-12 col-md-4">
+          <div class="feature">
+            <img src="img/icon-1.png">
+            <h3>Stream to any device</h3>
+            <p>Play all of your favourite music on<br> any device. Anywhere.</p>
           </div>
         </div>
-    </section>
+        <div class="col-md-4 col-xs-12">
+          <div class="feature">
+            <img src="img/icon-2.png">
+            <h3>Stream to any device</h3>
+            <p>Play all of your favourite music on<br> any device. Anywhere.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <div class="feature">
+            <img src="img/icon-3.png">
+            <h3>Stream to any device</h3>
+            <p>Play all of your favourite music on<br> any device. Anywhere.</p>
+          </div>
+        </div><!-- ends col -->
+        </div><!-- ends row -->
+      </section>
 
-    <section class="row">
+      <!-- ARTISTS  -->
 
-    </section>
-    </div>
+      <section class="container-fluid">
+          <div class="headings">
+            <h2>All your favourite artists. In one place.</h2>
+            <p>Upgrade to premium and get your first 2 months free of charge.</p>
+          </div>
+          <div class="row artists">
+            <div class="col-md-4 col-xs-6">
+              <img src="img/album1.png">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <img src="img/album2.png">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <img src="img/album3.png">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <img src="img/album4.png">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <img src="img/album5.png">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <img src="img/album6.png">
+            </div>
+          </div>
+      </section>
 
+      <!-- footer -->
+    <footer>
+      <a href="#"><img src="img/jukebox-logo-white.png" class="logo"></a>
+      <ul class="social">
+        <li><a href="#"><img src="img/social-fb.png"></a></li>
+        <li><a href="#"><img src="img/social-insta.png"></a></li>
+        <li><a href="#"><img src="img/social-twitter.png"></a></li>
+        <li><a href="#"><img src="img/social-vimeo.png"></a></li>
+      </ul>
+    </footer>
 
     <!-- scripts -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jukebox.js"></script>
   </body>
 </html>

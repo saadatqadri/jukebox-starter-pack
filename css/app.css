@@ -1,54 +1,138 @@
-/*BOOTSTRAP overrides and other styling for the jukebox page */
+body {
+    font-family: Arial;
+}
 
 ul {
+    /*get rid of default ul styles*/
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-}
 
-.navbar {
-   background-color: white;
-}
-
-.navbar-default, .navbar-collapse {
-    border-color: white;
+.container-fluid {
+    background-color: #fff;
 }
 
 .jukebox-logo {
-    top: 10px;
+    position: absolute;
+    top: 14px;
+    left: 55px;
 }
 
-/* HERO IMAGE */
+.navbar-header {
+    height: 80px;
+}
+
+.navbar-default {
+    border-color: #fff;
+}
+
 .hero-image {
     background-image: url('../img/hero-photo.png');
     background-repeat: no-repeat;
     background-size: 100% auto;
-    height:720px;
+    height: 720px;
+
     position: relative;
+
 }
 
 .hero-image-text {
+
     position: absolute;
-    left:20%;
-    top:10%;
-    color: #fff;
+    left: 15%;
+    top: 35%;
 }
 
-.hero-image-text h1 {
-    font-size:22px;
-    font-weight: 600; /* makes the text bold */
+.hero-image-text h1{
+    font-family: Arial;
+    font-size: 52px;
+    color: #FFFFFF;
 }
 
-section .headings {
-    text-align: center;
-    padding-top: 70px;
+.hero-image-text p {
+    font-family: Arial;
+    color: #FFFFFF;
+    font-size: 22px;
 }
+
+.headings {
+    text-align:center;
+}
+
+.headings h2{
+    font-size: 36px;
+    font-family: Arial;
+    color: #2B95FD;
+}
+
+.headings p{
+    font-size: 22px;
+}
+
+
+/* plans section */
 
 .plans {
+    color: #fff;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px 0px 30px 0px;
+}
+
+.plans h3 {
+    font-size: 42px;
+}
+
+.plans h4 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.plans p {
+    margin: 40px 0;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.basic {
+    background-color: #2b95fd;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.plus {
+    background-color: #4e65ec;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.premium {
+    background-color: #7a30d3;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* end of plans section */
+
+/*features section*/
+
+.features-container {
+    background-image: url('../img/about-photo.png');
+    background-size: cover;
+
+}
+.features {
+    padding: 80px 7% 50px 7%;
+}
+
+.feature {
     color: #fff;
     text-align: center;
     width: 100%;
@@ -57,42 +141,90 @@ section .headings {
     padding: 10px 0 30px 0px;
 }
 
-.basic {
-    background-color: #2b95fd;
+.features .feature h3 {
+    font-size: 30px;
 }
 
-.plus {
-    background-color: #4e65ec;
+.features .feature p {
+    font-size: 18px;
 }
 
-.premium {
-    background-color: #7a30d3;
+.features .feature img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*end of features section*/
+
+
+/* artists section */
+
+.artists {
+    padding: 0px 7% 50px 7%;
+}
+
+.artist img {
+    width: 100%;
+    margin: 15px 0px;
+}
+
+/* end of artists section */
+
+
+/*footer section */
+
+footer {
+    height: 80px;
+    background-color: #2391fd;
+    position: relative;
+}
+footer .logo {
+    margin-top: 28px;
+    margin-left: 70px;
+}
+footer .social {
+    position: absolute;
+    top:18px;
+    right:70px;
+}
+footer .social li {
+    float:right;
+    margin-left:15px;
+}
+
+/*end of footer section */
+
+@media screen and (max-width: 768px){
+    .hero-image {
+        height: 250px;
+    }
+    .hero-image-text h1{
+        font-size: 22px;
+    }
+    .hero-image-text p{
+        font-size: 10px;
+    }
+    .hero-image-text img{
+        width: 200px;
+        height: 46px;
+    }
+
 }
 
 
-   /*==========  Mobile First Method  ==========*/
+.hero-background{
+    position: relative;
+    display: none;
+}
+.hero-bg {
+    width: 100%;
+    height: auto;
+}
 
-
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px) {
-        .btn-subscribe{
-            width: 125px;
-        }
-
-        .hero-image{
-            height: 200px;
-        }
-
-    }
-
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-
-    }
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-
-    }
-
-
+.hero-background-text {
+    position: absolute;
+    display:none;
+    top: 150px;
+    left: 50%;
+    font-size: 42px;
+}
