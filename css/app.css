@@ -1,13 +1,22 @@
+<<<<<<< Updated upstream
 body {
     font-family: Arial;
 }
 
 ul {
     /*get rid of default ul styles*/
+=======
+body{
+    font-family: arial;
+}
+
+ul{
+>>>>>>> Stashed changes
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding:   0;
 }
+<<<<<<< Updated upstream
 
 
 .container-fluid {
@@ -15,11 +24,19 @@ ul {
 }
 
 .jukebox-logo {
+=======
+.container-fluid{
+    background-color: #fff;
+}
+
+.jukebox-logo{
+>>>>>>> Stashed changes
     position: absolute;
     top: 14px;
     left: 55px;
 }
 
+<<<<<<< Updated upstream
 .navbar-header {
     height: 80px;
 }
@@ -34,10 +51,27 @@ ul {
     background-size: 100% auto;
     height: 720px;
 
+=======
+.navbar-header{
+    height: 80px;
+}
+
+.navbar-default{
+    border-color:#fff;
+}
+
+.hero-image{
+    background-image:url('../img/hero-photo.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    /*The above code for background-size makes the background image responsive, versus using "cover" which has some weird issues that doesn't actually resize the entire image, just covers the full width of the row*/
+    height: 720px;
+>>>>>>> Stashed changes
     position: relative;
 
 }
 
+<<<<<<< Updated upstream
 .hero-image-text {
 
     position: absolute;
@@ -96,24 +130,75 @@ ul {
     margin: 40px 0;
     line-height: 24px;
     font-size: 18px;
+=======
+.hero-image-text{
+    position: absolute;
+    left: 15%; /*209px is the technical distance, but to make it responsive, divide 209 by the total width of the page - which is indicated on the mockup - and you get roughly 15%*/
+    top:  35%
+}
+
+.hero-image-text h1{
+    font-family: arial;
+    font-size: 52px;
+    color: #fff;
+
+}
+.hero-image-text p {
+    font-size: 22px;
+    color: #ffffff;
+    font-family: arial;
+}
+
+.pricing-text{
+    text-align: center;
+}
+
+.pricing-text h2{
+    font-size: 36px;
+    font-family: arial;
+    color: #2b95fd;
+}
+
+.pricing-text p{
+    font-size: 22px;
+}
+
+.plans{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: #FFFFFF;
+>>>>>>> Stashed changes
 }
 
 .basic {
     background-color: #2b95fd;
     border-radius: 15px;
+<<<<<<< Updated upstream
     padding: 10px;
     margin: 10px;
+=======
+    padding:10px;
+    margin:10px;
+>>>>>>> Stashed changes
 }
 
 .plus {
     background-color: #4e65ec;
     border-radius: 15px;
+<<<<<<< Updated upstream
     padding: 10px;
     margin: 10px;
+=======
+    padding:10px;
+    margin:10px;
+
+>>>>>>> Stashed changes
 }
 
 .premium {
     background-color: #7a30d3;
+<<<<<<< Updated upstream
     border-radius: 15px;
     padding: 10px;
     margin: 10px;
@@ -196,6 +281,17 @@ footer .social li {
 
 @media screen and (max-width: 768px){
     .hero-image {
+=======
+    border-radius: 15px;    
+    padding:10px;
+    margin:10px;
+
+}
+
+
+@media screen and (max-width: 768px){
+    .hero-image{
+>>>>>>> Stashed changes
         height: 250px;
     }
     .hero-image-text h1{
@@ -203,6 +299,7 @@ footer .social li {
     }
     .hero-image-text p{
         font-size: 10px;
+<<<<<<< Updated upstream
     }
     .hero-image-text img{
         width: 200px;
@@ -211,6 +308,14 @@ footer .social li {
 
 }
 
+=======
+    }
+    .hero-image-text img{
+        width: 200px; /*By hovering over the button on Chrome you can see the exact pixel size and determine a % from that*/
+        height: 46px;   
+    }
+} 
+>>>>>>> Stashed changes
 
 .hero-background{
     position: relative;
